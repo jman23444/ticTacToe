@@ -1,0 +1,40 @@
+#content {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 32px;
+    align-items: center;
+    gap: 32px;
+}
+
+h1#title {
+    font-family: poppins;
+    font-size: 28px;
+    font-weight: 600;
+    color: #031044;
+}
+
+.grid-container {
+    display: grid;  
+    padding: 4px;
+    grid-template-columns: repeat(3, 100px);  
+    grid-template-rows: repeat(3, 100px);     
+    gap: 4px; 
+    border-radius: 8px;
+    border: 2px solid #031044;
+    width: fit-content;  
+    height: fit-content; 
+}
+
+.grid-item {
+    width: 100px;  
+    height: 100px; 
+    background-color: #fff; 
+    border: 2px solid #031044; 
+    transition: background-color 0.2s ease-in-out;
+}
+
+.grid-item:hover {
+    background-color: #bdbbf1;
+    transform: scale(1.05);
+}
