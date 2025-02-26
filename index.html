@@ -14,16 +14,26 @@
 <body>
     <section id="content">
         <h1 id="title">Tic Tac Toe</h1>
-        <div class="grid-container">
-            <div class="grid-item"></div>
-            <div class="grid-item"></div>
-            <div class="grid-item"></div>
-            <div class="grid-item"></div>
-            <div class="grid-item"></div>
-            <div class="grid-item"></div>
-            <div class="grid-item"></div>
-            <div class="grid-item"></div>
-            <div class="grid-item"></div>
+        <div id="game-setup">
+            <input type="text" id="player1-name" placeholder="Player 1 name (X)" required>
+            <input type="text" id="player2-name" placeholder="Player 2 name (O)" required>
+            <button id="start-game">Start Game</button>
+        </div>
+        <div class="grid-container" id="gameboard">
+            <div class="grid-item" data-index="0"></div>
+            <div class="grid-item" data-index="1"></div>
+            <div class="grid-item" data-index="2"></div>
+            <div class="grid-item" data-index="3"></div>
+            <div class="grid-item" data-index="4"></div>
+            <div class="grid-item" data-index="5"></div>
+            <div class="grid-item" data-index="6"></div>
+            <div class="grid-item" data-index="7"></div>
+            <div class="grid-item" data-index="8"></div>
+        </div>
+        <div id="result" style="margin-top: 20px; font-size: 20px; color: #031044;"></div>
+        <div class="button-container">
+            <button id="restart-game" style="display: none;">Restart Game</button>
+            <button id="total-reset" style="display: none;">Total Reset</button>
         </div>
     </section>
 </body>
